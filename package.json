@@ -7,7 +7,9 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "mineflayer": "^4.8.1"
+    "mineflayer": "^4.8.1",
+    "child-process": "^1.0.2",
+    "fs": "^0.0.2"
   },
   "engines": {
     "node": "14.x"
