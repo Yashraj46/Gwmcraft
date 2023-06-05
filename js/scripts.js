@@ -1,7 +1,7 @@
 (() => {
   if (document.getElementById('header')) {
   document.getElementById('copyip').addEventListener('click', () => {
-    const serverIP = 'play';
+    const serverIP = 'play.gwmcraft.xyz:19132';
     const tempInput = document.createElement('input');
     tempInput.setAttribute('value', serverIP);
     document.body.appendChild(tempInput);
@@ -11,7 +11,7 @@
     Swal.fire({
       icon: 'success',
       title: 'Server IP Copied',
-      html: 'Server IP successfully copied to the clipboard.'
+      html: 'Server IP successfully copied to the clipboard 👍.'
     });
   });
 
