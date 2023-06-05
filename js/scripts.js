@@ -1,7 +1,7 @@
 (() => {
   if (document.getElementById('header')) {
   document.getElementById('copyip').addEventListener('click', () => {
-    const serverIP = 'play.luxcube.net';
+    const serverIP = 'play';
     const tempInput = document.createElement('input');
     tempInput.setAttribute('value', serverIP);
     document.body.appendChild(tempInput);
