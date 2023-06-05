@@ -1,0 +1,110 @@
+/** Smooth Sidebar Scrolling **/
+html {
+	scroll-behavior: smooth;
+}
+
+/** Nav sticky **/
+main > nav {
+	position: sticky;
+	top: 2rem;
+	align-self: start;
+}
+
+.section-nav li.active > a {
+	color: rgb(255, 200, 0);
+	font-weight: 500;
+}
+
+/* Sidebar Navigation */
+.section-nav {
+	padding-left: 0;
+	border-left: 1px solid #ccc;
+}
+
+.section-nav a {
+	text-decoration: none;
+	display: block;
+	padding: .125rem 0;
+	color: #ccc;
+	transition: all 50ms ease-in-out; /** Active state transition **/
+}
+
+.section-nav a:hover,
+.section-nav a:focus {
+	color: rgb(255, 200, 0);
+}
+
+/** Reset **/
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	background: #101214;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: #ccc;
+}
+
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	margin-left: 1rem;
+}
+
+h1 {
+	font-weight: 600;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+.box-width {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.color {
+    color: rgb(255, 200, 0);
+  }
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.padding {
+    padding-left: 1em;
+}
+
+.padding2 {
+    padding-left: 2em;
+}
+
+.discord {
+    color: rgb(96, 133, 255);
+    font-size: 80%
+}
+
+/** Page layout **/
+main {
+	display: grid;
+	grid-template-columns: 1fr 15em;
+	max-width: 100em;
+	width: 90%;
+	margin: 0 auto;
+}
+
+/** Section padding **/
+section {
+	padding-bottom: 2rem;
+}
